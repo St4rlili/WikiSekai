@@ -9,25 +9,23 @@ p,li{
 div{
     border: 1px solid black;
 }
-.fondo{
-    background: url(imgs/background.jpg) no-repeat;
-    background-size: contain;
+.fondo {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(193, 223, 235) 12%), url(imgs/background.jpg);
+    background-size: 100%;
 }
 
 /* estilos de header */
 
 header{
-    background-color: white;
-    height: 3.5em;
     width: 100%;
+    grid-column: 1/3;
+    grid-row: 1/2;
     display: inline-grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr 4fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 4fr 1fr 1fr;
 }
 header div{
     text-align: center;
-    height: 3.4em;
-    background-color: aqua;
 }
 header div ul{
     list-style: none;
@@ -60,31 +58,41 @@ header div ul{
 /* ESTILOS DE PRINCIPAL(DIV DE LA PAGINA GENERAL(SIN CONTAR HEADER)) */
 
 .principal{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 8em;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 6em;
 }
 .principal>div{
-    width: 85%;
+    border-radius: 5px;
 }
 
 /* LATERAL ACTUAL(BANNERS) */
 
 .actual{
     background-color: white;
-    max-width: 25%;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.actual div{
+    margin: 1em;
+}
+.actual h3{
+    text-align: center;
 }
 .actual img{
-    width: 100%;
+    max-width: 100%;
 }
 
 /* ESTILOS PARA BIENVENIDA */
 
 .descripcion{
     background-color: white;
-    max-width: 60%;
     display: inline-grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
     grid-template-columns: 4fr 3fr;
     grid-template-rows: auto auto auto;
     align-items: start;
@@ -102,11 +110,14 @@ header div ul{
     max-width: 100%;
 }
 
-/* RESUMEN GENERAL(TEXTO) */
+/* RESUMEN GENERAL(TEXTO) + TABLA DE CONTENIDO(PARA ALINEACION)*/
 
-.resumen{
+.resumentabla{
     grid-column: 1/2;
     grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 /* INFORMACIÓN LATERAL */
@@ -183,16 +194,14 @@ header div ul{
     text-align: center;
 }
 
-/* TABLA DE CONTENIDO */
-
-.tabla{
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
 
 /* contenido de la pagina(texto) */
 
 .contenido{
-    background-color: blue;
-    width: 85%;
+    background-color: white;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.contenido *{
+    margin:1em 3em;
 }
