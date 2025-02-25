@@ -8,14 +8,14 @@ html,body{
     padding: 0;
 }
 p,li{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .fondo {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(203, 225, 226) 5%), url(imgs/b2.jpg);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(203, 225, 226) 2%), url(imgs/b2.jpg) no-repeat;
     background-size: 100%;
     min-height: 100vh;
-    border: 1px solid black;
+    border: 1px solid transparent;
 }
 
 /* estilos de header */
@@ -82,8 +82,7 @@ header div ul{
 /* LATERAL ACTUAL(BANNERS) */
 
 .actual{
-    border: 1px solid black;
-    background-color: white;
+    background-color: rgb(241, 236, 236);
     grid-column: 2/3;
     grid-row: 2/4;
 }
@@ -104,7 +103,7 @@ header div ul{
     display: inline-grid;
     grid-column: 1/2;
     grid-row: 2/3;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: auto auto auto;
     align-items: start;
 }
@@ -133,6 +132,7 @@ header div ul{
 
 /* INFORMACIÓN LATERAL */
 .info {
+    border: 1px solid black;
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
@@ -146,6 +146,8 @@ header div ul{
 .info *{
     margin:0;
     font-size: 13px;
+}
+.info div{
     border: 1px solid black;
 }
 .subinfo1{
@@ -209,7 +211,7 @@ header div ul{
 /* tabla */
 .tabla{
     border: 1px solid black;
-    width: 50%;
+    width: 75%;
 }
 .tabla ol,li,a{
     text-decoration:none;
@@ -233,15 +235,73 @@ header div ul{
     grid-column: 1/2;
     grid-row: 3/4;
 }
-.contenido h3,h4{
-    margin:1em 0.5em 0.5em 0.8em;
+.contenido h3,.contenido h4{
+    margin:1.5em 0.5em 0.5em 0.5em;
 }
 .contenido p{
-    margin:0em 0.5em 2em 0.8em;
+    margin:0em 0.5em 1em 0.5em;
 }
 .contenido h2{
-    margin: 2em 0 0 0;
+    margin: 0.5em 1em 0 1em;
+}
+.contenido hr{
+    margin: 0 1em 0 1em;
 }
 .contenido div{
     margin: 1em;
+}
+
+/* apartados dentro de contenido */
+/*history*/
+
+.content3{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+.a1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.a1 img{
+    max-width: 100%;
+}
+.a2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+/*characters*/
+
+.content4 th{
+    vertical-align: top;
+    padding: 1em 2em;
+}
+
+/*system*/
+
+.content5 img,.content6 img,.content8 img{
+    width: 30%;
+    margin: 0.5em 1em
+}
+.b1{
+    float: right;
+}
+.b2{
+    float: left;
+}
+.b3{
+    float: right;
+}
+.b4{
+    float: left;
+}
+.c1{
+    float: right;
+}
+.d1{
+    float: right;
+}
+.d2{
+    float: right;
 }
