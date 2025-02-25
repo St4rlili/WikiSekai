@@ -3,15 +3,19 @@
     color: rgb(47, 47, 48);
     line-height: 1.5em;
 }
+html,body{
+    margin: 0;
+    padding: 0;
+}
 p,li{
     font-size: 15px;
 }
-div{
-    border: 1px solid black;
-}
+
 .fondo {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(193, 223, 235) 12%), url(imgs/background.jpg);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(203, 225, 226) 5%), url(imgs/b2.jpg);
     background-size: 100%;
+    min-height: 100vh;
+    border: 1px solid black;
 }
 
 /* estilos de header */
@@ -22,10 +26,12 @@ header{
     grid-row: 1/2;
     display: inline-grid;
     grid-template-rows: auto;
-    grid-template-columns: 2fr 1fr 1fr 4fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr;
+    align-items: end;
 }
 header div{
     text-align: center;
+    font-size: 24px;
 }
 header div ul{
     list-style: none;
@@ -46,6 +52,10 @@ header div ul{
     grid-column: 3/4;
     grid-row: 0/1;
 }
+.nomostrar{
+    grid-column: 4/5;
+    grid-row: 0/1;
+}
 .inicio{
     grid-column: 5/6;
     grid-row: 0/1;
@@ -59,19 +69,20 @@ header div ul{
 
 .principal{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 5fr 2fr;
     grid-template-rows: auto auto auto;
-    max-width: 85%;
+    max-width: 80%;
     margin: 0 auto;
     margin-top: 6em;
 }
 .principal>div{
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 /* LATERAL ACTUAL(BANNERS) */
 
 .actual{
+    border: 1px solid black;
     background-color: white;
     grid-column: 2/3;
     grid-row: 2/4;
@@ -93,7 +104,7 @@ header div ul{
     display: inline-grid;
     grid-column: 1/2;
     grid-row: 2/3;
-    grid-template-columns: 4fr 3fr;
+    grid-template-columns: 4fr 2fr;
     grid-template-rows: auto auto auto;
     align-items: start;
 }
@@ -135,6 +146,7 @@ header div ul{
 .info *{
     margin:0;
     font-size: 13px;
+    border: 1px solid black;
 }
 .subinfo1{
     grid-column: 1/3;
@@ -194,7 +206,26 @@ header div ul{
     text-align: center;
 }
 
-
+/* tabla */
+.tabla{
+    border: 1px solid black;
+    width: 50%;
+}
+.tabla ol,li,a{
+    text-decoration:none;
+    margin: 0.2em;
+}
+.tabla div{
+    display: flex;
+    align-items: center;
+}
+.tabla img{
+    height: 1em;
+    padding-left: 1.5em;
+}
+.tabla p{
+    padding-left: 0.5em;
+}
 /* contenido de la pagina(texto) */
 
 .contenido{
@@ -202,6 +233,15 @@ header div ul{
     grid-column: 1/2;
     grid-row: 3/4;
 }
-.contenido *{
-    margin:1em 3em;
+.contenido h3,h4{
+    margin:1em 0.5em 0.5em 0.8em;
+}
+.contenido p{
+    margin:0em 0.5em 2em 0.8em;
+}
+.contenido h2{
+    margin: 2em 0 0 0;
+}
+.contenido div{
+    margin: 1em;
 }
