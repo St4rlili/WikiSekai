@@ -1,6 +1,6 @@
 *{
     font-family:Verdana, Tahoma, sans-serif;
-    color: rgb(47, 47, 48);
+    color: rgb(56, 56, 58);
     line-height: 1.5em;
 }
 html,body{
@@ -16,6 +16,7 @@ p,li{
     background-size: 100%;
     min-height: 100vh;
     border: 1px solid transparent;
+    padding-bottom: 2em;
 }
 
 /* estilos de header */
@@ -31,7 +32,8 @@ header{
 }
 header div{
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
+    padding-bottom: 0.2em;
 }
 header div ul{
     list-style: none;
@@ -89,11 +91,57 @@ header div ul{
 .actual div{
     margin: 1em;
 }
-.actual h3{
+.actual p{
+    padding-left: 1em;
+    font-weight: bold;
+}
+.actual h4{
+    margin: 0;
+    font-size: 17px;
+    color:  #00CDBA; 
     text-align: center;
+    font-weight: bold;
 }
 .actual img{
     max-width: 100%;
+}
+/*paginas en tendencia*/
+.trend{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+.item {
+    border-left: 1px dotted grey;
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+.item p{
+    font-size: 13px;
+}
+.item img{
+    max-width: 4em;
+    height: 4em;
+    float: left;
+}
+/*galeria*/
+.galeria{
+    background-color: rgb(221, 213, 213);
+    overflow: auto;
+    white-space: nowrap;
+}
+.galeria img{
+    width: 75%;
+    height: 8em;
+    padding: 0.5em 0em;
+    border-radius: 1em;
+}
+.ds{
+    width: 90%;
+}
+.ds img{
+    width:98%;
 }
 
 /* ESTILOS PARA BIENVENIDA */
@@ -108,7 +156,10 @@ header div ul{
     align-items: start;
 }
 .descripcion>div{
-    margin:1.4em;
+    margin: 0.5em 1.4em;
+}
+.descripcion h1{
+    text-shadow: 1px 2px 1px aqua;
 }
 .bienvenida{
     grid-column: 1/3;
@@ -132,7 +183,8 @@ header div ul{
 
 /* INFORMACIÓN LATERAL */
 .info {
-    border: 1px solid black;
+    border: 1px solid rgb(212, 207, 207);
+    border-radius: 4px;
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
@@ -148,7 +200,7 @@ header div ul{
     font-size: 13px;
 }
 .info div{
-    border: 1px solid black;
+    border: 1px solid rgb(212, 207, 207);
 }
 .subinfo1{
     grid-column: 1/3;
@@ -210,10 +262,10 @@ header div ul{
 
 /* tabla */
 .tabla{
-    border: 1px solid black;
+    border: 1px solid rgb(212, 207, 207);
     width: 75%;
 }
-.tabla ol,li,a{
+.tabla ol,.tabla li,.tabla a{
     text-decoration:none;
     margin: 0.2em;
 }
@@ -276,6 +328,14 @@ header div ul{
 .content4 th{
     vertical-align: top;
     padding: 1em 2em;
+    font-size: 14px;
+}
+.content4 img{
+    max-width: 85%;
+}
+.niigo img{
+    max-width: 90%;
+    width: 90%;
 }
 
 /*system*/
@@ -303,5 +363,54 @@ header div ul{
     float: right;
 }
 .d2{
+    clear: both;
     float: right;
+}
+
+/* estilos palabras */
+
+.pi{
+    color: rgb(15, 150, 150)
+}
+.vs,.ln,.mmj,.vbs,.wxs,.niigo,.miku,.rin,.len,.luka,.kaito,.meiko,.ichika{
+    font-weight: bold;
+}
+.vs{
+    color:  #00CDBA;
+}
+.ln{
+    color:  #4455DD;
+}
+.mmj{
+    color: #6CCB20 ;
+}
+.vbs{
+    color:  #EE1166 ;
+}
+.wxs{
+    color:  #FF9900 ;
+}
+.niigo{
+    color:  #884499 ;
+}
+.miku{
+    color:  #33CCBA ;
+}
+.rin{
+    color:  #FFCC11 ;
+}
+.len{
+    color:  #FFEE12 ;
+}
+.luka{
+    color:  #FFBACC ;
+}
+.kaito{
+    color:  #3367CD ;
+}
+.meiko{
+    color:  #DE4444 ;
+}
+.ichika{
+    color:  #33AAEE ;
 }
