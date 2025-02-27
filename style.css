@@ -13,8 +13,7 @@ p,li{
 
 .fondo {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(203, 225, 226) 2%), url(imgs/b2.jpg) no-repeat;
-    background-size: 100%;
-    min-height: 100vh;
+    background-size:100%;
     border: 1px solid transparent;
     padding-bottom: 2em;
 }
@@ -32,8 +31,12 @@ header{
 }
 header div{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
     padding-bottom: 0.2em;
+}
+header a{
+    text-decoration: none;
 }
 header div ul{
     list-style: none;
@@ -43,8 +46,8 @@ header div ul{
     grid-row: 0/1;
 }
 .logo img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
 }
 .menu{
     grid-column: 2/3;
@@ -98,14 +101,16 @@ header div ul{
 .actual h4{
     margin: 0;
     font-size: 17px;
-    color:  #00CDBA; 
+    color:  rgb(10, 200, 230);
     text-align: center;
     font-weight: bold;
 }
 .actual img{
     max-width: 100%;
 }
+
 /*paginas en tendencia*/
+
 .trend{
     display: flex;
     flex-direction: column;
@@ -125,16 +130,18 @@ header div ul{
     height: 4em;
     float: left;
 }
+
 /*galeria*/
+
 .galeria{
     background-color: rgb(221, 213, 213);
     overflow: auto;
     white-space: nowrap;
 }
 .galeria img{
-    width: 75%;
+    width: 80%;
     height: 8em;
-    padding: 0.5em 0em;
+    padding: 0.5em 0.2em;
     border-radius: 1em;
 }
 .ds{
@@ -263,7 +270,8 @@ header div ul{
 /* tabla */
 .tabla{
     border: 1px solid rgb(212, 207, 207);
-    width: 75%;
+    max-width: 80%;
+    overflow:auto;
 }
 .tabla ol,.tabla li,.tabla a{
     text-decoration:none;
