@@ -280,6 +280,7 @@ header div ul{
 .tabla p{
     padding-left: 0.5em;
 }
+
 /* contenido de la pagina(texto) */
 
 .contenido{
@@ -325,18 +326,45 @@ header div ul{
 
 /*characters*/
 
-.content4 th{
-    vertical-align: top;
-    padding: 1em 2em;
-    font-size: 14px;
+.grupos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
-.content4 img{
-    max-width: 85%;
+.grupos img{
+    width: 100%;
+    max-width: 65%;
+    padding: 1.5em 2em 0.2em 2em;
 }
-.niigo img{
-    max-width: 90%;
-    width: 90%;
+.vs{
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
+.ln{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.mmj{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.vbs{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.wxs{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.niigo{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
 
 /*system*/
 
