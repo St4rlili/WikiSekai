@@ -450,3 +450,38 @@ header div ul{
 .ichika{
     color:  #33AAEE ;
 }
+
+/* PAGINA LOGIN */
+
+.fondo2{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgb(203, 225, 226) 35%), url(imgs/background.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cajalogin{
+    background-color: white;
+    border-radius: 1em;
+    width: 20em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+input, label {
+    display:block;
+}
+button{
+    margin: 1em;
+}
+.volver {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    text-decoration: none;
+}
